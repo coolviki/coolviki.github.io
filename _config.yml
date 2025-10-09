@@ -1,17 +1,28 @@
-theme: jekyll-theme-minimal
 title: Vikram Kumar - Professional Profile
 description: Managing Director, Head of Aladdin Wealth Tech - India at BlackRock | FMS MBA
 author: Vikram Kumar
 url: https://coolviki.github.io
 baseurl: ""
 
+# Custom Apple-inspired theme (no external theme)
+# Using custom layouts and CSS
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# SASS configuration for custom styling
+sass:
+  style: compressed
+
+# Social links
 social:
   name: Vikram Kumar
   links:
     - https://www.linkedin.com/in/vikramkumar
     - https://github.com/coolviki
+
+# SEO settings
+lang: en
+timezone: Asia/Kolkata
