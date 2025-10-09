@@ -77,14 +77,6 @@ title: Vikram Kumar - Professional Profile
         </ul>
     </div>
     
-    <div class="card-section">
-        <h3 class="card-title">Languages</h3>
-        <ul class="clean-list">
-            <li><strong>Hindi</strong> - Native proficiency</li>
-            <li><strong>English</strong> - Native proficiency</li>
-            <li><strong>Japanese</strong> - Elementary proficiency</li>
-        </ul>
-    </div>
 </section>
 
 <!-- GitHub Contributions Section -->
