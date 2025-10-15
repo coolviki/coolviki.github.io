@@ -19,6 +19,17 @@
     
     <!-- SEO -->
     {% seo %}
+
+    <!-- Google Analytics -->
+    {% if site.google_analytics and jekyll.environment == 'production' %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+    </script>
+    {% endif %}
 </head>
 <body>
     <!-- Apple-style navigation -->
@@ -30,9 +41,9 @@
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
                 <a href="#github">GitHub</a>
-                <a href="#contact">Connect</a>
             </div>
         </div>
     </nav>

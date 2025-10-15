@@ -1,6 +1,9 @@
 title: Vikram Kumar - Professional Profile
-description: Managing Director, Head of Aladdin Wealth Tech - India at BlackRock | FMS MBA
+description: Managing Director - Aladdin Wealth Tech | BlackRock | 20+ years in Technology Leadership | FMS MBA
 author: Vikram Kumar
+email: vikram17june@gmail.com
+phone: +91-9810175951
+location: NCR, India
 url: https://coolviki.github.io
 baseurl: ""
 
@@ -26,3 +29,6 @@ social:
 # SEO settings
 lang: en
 timezone: Asia/Kolkata
+
+# Google Analytics
+google_analytics: G-5E0NPRC1M7
