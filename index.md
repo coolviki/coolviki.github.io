@@ -50,7 +50,6 @@ title: Vikram Kumar - Professional Profile
             <li>Previously led the Active Equities Integration & Data Investments team, architecting & developing tools that deliver data science-driven insights to Active Equities investors for Alpha generation</li>
             <li>Played a key role in firm's strategic tech direction including cloud migration, AI adoption, and move to SaaS offerings like Snowflake leading to Tech 2030 vision</li>
             <li>Delivered multiple topline growth initiatives including commercial offerings for Aladdin: AI offerings, Data warehousing offerings, and compute at scale</li>
-            <li>As Sr. Lead Product Development, responsible for design/delivery/team management for startup mobile-based search client</li>
         </ul>
     </div>
 
