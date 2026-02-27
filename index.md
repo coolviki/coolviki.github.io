@@ -109,6 +109,33 @@ title: Vikram Kumar - Professional Profile
     </div>
 </section>
 
+<!-- Projects Section -->
+<section id="projects" class="content-section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card-section">
+        <h3 class="card-title">PayWise</h3>
+        <p><strong>Smart Credit Card Payment Recommender</strong><br>
+        <a href="https://paywise.vikramkumar.org" target="_blank">paywise.vikramkumar.org</a></p>
+
+        <p style="margin-bottom: 16px;">A mobile-first web app that helps users maximize rewards by recommending the best credit card for every purchase. Simply search for a store or restaurant, and PayWise instantly shows which card from your wallet offers the highest cashback or rewards.</p>
+
+        <ul class="feature-list">
+            <li>Real-time credit card recommendations based on merchant category</li>
+            <li>Integration with Google Places for nearby store discovery</li>
+            <li>Live dine-in offers from Swiggy Dineout, Zomato Pay, and EazyDiner via AI-powered search</li>
+            <li>Support for major Indian banks (HDFC, ICICI, Axis, SBI, Amex, and more)</li>
+            <li>Dark mode and PWA support for mobile installation</li>
+        </ul>
+
+        <p style="margin-top: 16px;"><strong>Tech Stack:</strong> React, TypeScript, Tailwind CSS, Vite, FastAPI, PostgreSQL, Perplexity API, Firebase Auth</p>
+
+        <div class="github-links" style="margin-top: 16px;">
+            <a href="https://github.com/coolviki/paywise" target="_blank" class="github-button">View on GitHub</a>
+        </div>
+    </div>
+</section>
+
 <!-- GitHub Contributions Section -->
 <section id="github" class="content-section">
     <h2 class="section-title">Open Source Contributions</h2>
