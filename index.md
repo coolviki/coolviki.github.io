@@ -120,18 +120,20 @@ title: Vikram Kumar - Professional Profile
 
         <p style="margin-bottom: 16px;">A mobile-first web app that helps users maximize rewards by recommending the best credit card for every purchase. Simply search for a store or restaurant, and PayWise instantly shows which card from your wallet offers the highest cashback or rewards.</p>
 
-        <ul class="feature-list">
-            <li>Real-time credit card recommendations based on merchant category</li>
-            <li>Integration with Google Places for nearby store discovery</li>
-            <li>Live dine-in offers from Swiggy Dineout, Zomato Pay, and EazyDiner via AI-powered search</li>
-            <li>Support for major Indian banks (HDFC, ICICI, Axis, SBI, Amex, and more)</li>
-            <li>Dark mode and PWA support for mobile installation</li>
-        </ul>
-
-        <p style="margin-top: 16px;"><strong>Tech Stack:</strong> React, TypeScript, Tailwind CSS, Vite, FastAPI, PostgreSQL, Perplexity API, Firebase Auth</p>
-
         <div class="github-links" style="margin-top: 16px;">
             <a href="https://github.com/coolviki/paywise" target="_blank" class="github-button">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="card-section">
+        <h3 class="card-title">Stock Portfolio</h3>
+        <p><strong>Investment Portfolio Tracker</strong><br>
+        <a href="https://stock.vikramkumar.org" target="_blank">stock.vikramkumar.org</a></p>
+
+        <p style="margin-bottom: 16px;">A web application for tracking and managing stock investments. Monitor your portfolio performance, view holdings, and analyze your investment positions.</p>
+
+        <div class="github-links" style="margin-top: 16px;">
+            <a href="https://github.com/coolviki/stock-portfolio-app" target="_blank" class="github-button">View on GitHub</a>
         </div>
     </div>
 </section>
