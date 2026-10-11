@@ -513,14 +513,31 @@ a:hover {
         margin: 0 auto;
     }
 
+    /* Plain dotted bullets instead of grey boxes nested inside the card */
     .feature-list {
-        gap: 10px;
+        gap: 12px;
     }
 
-    .feature-list li {
-        padding: 12px 14px;
+    .feature-list li,
+    .feature-list li:hover {
+        position: relative;
+        padding: 0 0 0 18px;
         font-size: 16px;
         line-height: 1.5;
+        background: none;
+        border-radius: 0;
+        transform: none;
+    }
+
+    .feature-list li::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 0.65em;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--color-text-secondary);
     }
     
     .footer-links {

@@ -7,7 +7,7 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
 <!-- Hero Section -->
 <section class="hero-section">
     <h1 class="hero-title">Vikram Kumar</h1>
-    <p class="hero-subtitle">Managing Director - Aladdin Wealth Tech | BlackRock<br>MBA - FMS, Delhi University</p>
+    <p class="hero-subtitle">Managing Director – Aladdin Wealth Tech | BlackRock<br>MBA – FMS, Delhi University</p>
     <div class="hero-buttons">
         <a href="https://www.linkedin.com/in/vikramkumar/" target="_blank" rel="noopener" class="hero-button linkedin-button">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -30,7 +30,7 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
     <div class="section-content">
         <p>More than two decades of experience focused on leading, strengthening and sustaining delivery arms of global services, product development organisations, banks and Investment management firms with 10+ years in technology leadership roles. Built & grown teams from scratch driving commercial tech revenues for the firm.</p>
 
-        <p>Currently serving as Managing Director and Head of Aladdin Wealth Tech India at BlackRock, leading both Product Engineering and Client Implementation teams - a key technology revenue arm for BlackRock. Aladdin Wealth™ is an industry-leading platform powering the future of wealth management, built on the portfolio and risk analysis technology used by BlackRock and sophisticated institutions globally.</p>
+        <p>Currently serving as Managing Director and Head of Aladdin Wealth Tech India at BlackRock, leading both Product Engineering and Client Implementation teams – a key technology revenue arm for BlackRock. Aladdin Wealth™ is an industry-leading platform powering the future of wealth management, built on the portfolio and risk analysis technology used by BlackRock and sophisticated institutions globally.</p>
 
         <p>Played a key role in the firm's strategic tech direction including cloud migration, AI adoption and move to various SaaS offerings like Snowflake leading to the Tech 2030 vision. Delivered multiple topline growth initiatives including commercial offerings for Aladdin including AI offerings, Data warehousing offerings and providing compute at scale.</p>
     </div>
@@ -42,11 +42,11 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
 
     <div class="card-section">
         <h3 class="card-title">BlackRock India</h3>
-        <p><strong>Managing Director - Head of Aladdin Wealth Tech India</strong><br>
+        <p><strong>Managing Director – Head of Aladdin Wealth Tech India</strong><br>
         <em>March 2013 – Present</em></p>
 
         <ul class="feature-list">
-            <li>Led the Aladdin Wealth Tech (AWT) team out of India, including Product Engineering and Client Implementation teams - a key technology revenue arm for BlackRock</li>
+            <li>Led the Aladdin Wealth Tech (AWT) team out of India, including Product Engineering and Client Implementation teams – a key technology revenue arm for BlackRock</li>
             <li>Aladdin Wealth™ is an industry-leading platform powering the future of wealth management, built on portfolio and risk analysis technology used by BlackRock and sophisticated institutions globally</li>
             <li>Previously led the Active Equities Integration & Data Investments team, architecting & developing tools that deliver data science-driven insights to Active Equities investors for Alpha generation</li>
             <li>Played a key role in firm's strategic tech direction including cloud migration, AI adoption, and move to SaaS offerings like Snowflake leading to Tech 2030 vision</li>
@@ -75,13 +75,13 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
     <h2 class="section-title">Education</h2>
 
     <div class="card-section">
-        <h3 class="card-title">Faculty of Management Studies (FMS) - Delhi University</h3>
+        <h3 class="card-title">Faculty of Management Studies (FMS) – Delhi University</h3>
         <p><strong>MBA</strong><br>
-        <em>2004 - 2007</em></p>
+        <em>2004 – 2007</em></p>
     </div>
 
     <div class="card-section">
-        <h3 class="card-title">Maharishi Dayanand University - Rohtak</h3>
+        <h3 class="card-title">Maharishi Dayanand University – Rohtak</h3>
         <p><strong>B.Tech (Computer Science)</strong></p>
     </div>
 </section>
@@ -93,19 +93,19 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
     <div class="card-section">
         <h3 class="card-title">Technical Skills</h3>
         <ul class="feature-list">
-            <li><strong>Software Engineering & Architecture</strong> - Technology stack includes Java, Python, Various databases including Snowflake</li>
-            <li><strong>Multi Cloud Strategy</strong> - Multi cloud usage and adoption, Cloud first Approach</li>
-            <li><strong>AI First Transformation</strong> - Leading AI adoption and integration initiatives</li>
-            <li><strong>Thought Leadership</strong> - Strategic technology direction and innovation</li>
+            <li><strong>Software Engineering & Architecture</strong> – Technology stack includes Java, Python, Various databases including Snowflake</li>
+            <li><strong>Multi Cloud Strategy</strong> – Multi cloud usage and adoption, Cloud first Approach</li>
+            <li><strong>AI First Transformation</strong> – Leading AI adoption and integration initiatives</li>
+            <li><strong>Thought Leadership</strong> – Strategic technology direction and innovation</li>
         </ul>
     </div>
 
     <div class="card-section">
         <h3 class="card-title">Leadership & Management</h3>
         <ul class="feature-list">
-            <li><strong>Tech Strategy</strong> - Strategic planning and execution for technology initiatives</li>
-            <li><strong>Product Development</strong> - End-to-end product lifecycle management</li>
-            <li><strong>Technology Risk</strong> - Risk management and mitigation strategies</li>
+            <li><strong>Tech Strategy</strong> – Strategic planning and execution for technology initiatives</li>
+            <li><strong>Product Development</strong> – End-to-end product lifecycle management</li>
+            <li><strong>Technology Risk</strong> – Risk management and mitigation strategies</li>
         </ul>
     </div>
 </section>
