@@ -80,11 +80,22 @@
         </div>
     </footer>
 
-    <!-- Highlight the section being read in the nav (styled on mobile only) -->
+    <!-- Mobile nav: edge fades and highlight of the section being read (styled on mobile only) -->
     <script>
         (function () {
             var row = document.querySelector('.nav-links');
-            if (!row || !('IntersectionObserver' in window)) return;
+            if (!row) return;
+
+            // Fade only the edges that have more pills to scroll to
+            function updateFades() {
+                row.classList.toggle('can-scroll-left', row.scrollLeft > 1);
+                row.classList.toggle('at-end', row.scrollLeft + row.clientWidth >= row.scrollWidth - 1);
+            }
+            row.addEventListener('scroll', updateFades, { passive: true });
+            window.addEventListener('resize', updateFades);
+            updateFades();
+
+            if (!('IntersectionObserver' in window)) return;
             var links = {};
             row.querySelectorAll('a[href^="#"]').forEach(function (a) {
                 links[a.getAttribute('href').slice(1)] = a;

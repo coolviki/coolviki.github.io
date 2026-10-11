@@ -394,13 +394,22 @@ a:hover {
     .nav-links {
         gap: var(--spacing-xs);
         overflow-x: auto;
-        /* Extra right padding so the last pill can scroll clear of the fade */
-        padding: 2px var(--spacing-xxl) 12px var(--spacing-sm);
+        padding: 2px var(--spacing-sm) 12px;
         scrollbar-width: none;
         -webkit-overflow-scrolling: touch;
-        /* Fade the right edge so it's clear the row scrolls */
-        -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
-        mask-image: linear-gradient(to right, #000 85%, transparent);
+        /* Fade whichever edge has more pills hidden behind it (toggled by the nav script) */
+        --fade-left: 0px;
+        --fade-right: var(--spacing-xl);
+        -webkit-mask-image: linear-gradient(to right, transparent, #000 var(--fade-left), #000 calc(100% - var(--fade-right)), transparent);
+        mask-image: linear-gradient(to right, transparent, #000 var(--fade-left), #000 calc(100% - var(--fade-right)), transparent);
+    }
+
+    .nav-links.can-scroll-left {
+        --fade-left: var(--spacing-xl);
+    }
+
+    .nav-links.at-end {
+        --fade-right: 0px;
     }
 
     .nav-links::-webkit-scrollbar {
