@@ -9,9 +9,16 @@ baseurl: ""
 # Using custom layouts and CSS
 
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+# Keep repo housekeeping files out of the published site
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
 
 # SASS configuration for custom styling
 sass:
