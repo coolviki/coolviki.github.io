@@ -372,10 +372,69 @@ a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Two-row header: name, then a swipeable row of section pills */
+    .nav-bar {
+        height: 92px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .nav-brand {
+        height: 44px;
+        display: flex;
+        align-items: center;
+        padding: 0 var(--spacing-sm);
+    }
+
     .nav-links {
+        gap: var(--spacing-xs);
+        overflow-x: auto;
+        /* Extra right padding so the last pill can scroll clear of the fade */
+        padding: 2px var(--spacing-xxl) 12px var(--spacing-sm);
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        /* Fade the right edge so it's clear the row scrolls */
+        -webkit-mask-image: linear-gradient(to right, #000 85%, transparent);
+        mask-image: linear-gradient(to right, #000 85%, transparent);
+    }
+
+    .nav-links::-webkit-scrollbar {
         display: none;
     }
-    
+
+    .nav-links a {
+        flex: none;
+        padding: 6px 14px;
+        border-radius: 980px;
+        background: var(--color-background-secondary);
+        color: var(--color-text);
+    }
+
+    .nav-links a:hover {
+        color: var(--color-text);
+        text-decoration: none;
+    }
+
+    .nav-links a.active,
+    .nav-links a.active:hover {
+        background: var(--color-secondary);
+        color: white;
+    }
+
+    .main-content {
+        padding-top: 92px;
+    }
+
+    /* Land section titles below the taller header */
+    .content-section {
+        scroll-margin-top: 92px;
+    }
+
     .hero-section {
         padding: var(--spacing-xxl) 20px;
         min-height: auto;
