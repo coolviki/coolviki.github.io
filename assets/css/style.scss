@@ -534,15 +534,15 @@ html {
     scroll-behavior: smooth;
 }
 
-/* GitHub Contributions Section */
-.github-contributions {
+/* "More on GitHub" line closing the Projects section */
+.projects-more {
     text-align: center;
-    margin: var(--spacing-xl) 0;
+    margin-top: var(--spacing-xl);
+    color: var(--color-text-secondary);
 }
 
-.github-contributions img {
-    border-radius: var(--border-radius-sm);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+.projects-more p {
+    margin-bottom: var(--spacing-sm);
 }
 
 .github-links {
