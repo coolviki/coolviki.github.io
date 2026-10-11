@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
-    
-    <!-- Apple-inspired favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}">
     
     <!-- Apple-inspired typography and styling -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     
-    <!-- Apple-style fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=SF+Pro+Text:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
     <!-- SEO -->
-    {% seo %}
+    <title>{{ page.title | default: site.title }}</title>
+    {% seo title=false %}
+    {% if page.url == "/" %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ site.author }}",
+        "url": "{{ site.url }}/",
+        "image": "{{ site.image | absolute_url }}",
+        "jobTitle": "Managing Director, Head of Aladdin Wealth Tech India",
+        "worksFor": { "@type": "Organization", "name": "BlackRock", "url": "https://www.blackrock.com" },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Faculty of Management Studies, University of Delhi" },
+            { "@type": "CollegeOrUniversity", "name": "Maharshi Dayanand University" }
+        ],
+        "address": { "@type": "PostalAddress", "addressRegion": "Delhi NCR", "addressCountry": "IN" },
+        "knowsAbout": ["Wealth Management Technology", "Aladdin", "Cloud Strategy", "AI Adoption", "Snowflake", "Software Architecture"],
+        "sameAs": [{% for link in site.social.links %}"{{ link }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
+    }
+    </script>
+    {% endif %}
 
     <!-- Google Analytics -->
     {% if site.google_analytics and jekyll.environment == 'production' %}
@@ -58,8 +71,8 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
-                <a href="{{ site.social.links[0] }}" target="_blank">LinkedIn</a>
-                <a href="{{ site.social.links[1] }}" target="_blank">GitHub</a>
+                <a href="{{ site.social.links[0] }}" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="{{ site.social.links[1] }}" target="_blank" rel="noopener">GitHub</a>
             </div>
             <div class="footer-copyright">
                 <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. All rights reserved.</p>

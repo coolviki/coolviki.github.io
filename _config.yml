@@ -19,11 +19,16 @@ plugins:
 sass:
   style: compressed
 
+# Default share image (Open Graph / Twitter)
+image: /assets/images/og-image.png
+twitter:
+  card: summary_large_image
+
 # Social links
 social:
   name: Vikram Kumar
   links:
-    - https://www.linkedin.com/in/vikramkumar
+    - https://www.linkedin.com/in/vikramkumar/
     - https://github.com/coolviki
 
 # SEO settings
