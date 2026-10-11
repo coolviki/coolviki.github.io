@@ -19,10 +19,14 @@ plugins:
 sass:
   style: compressed
 
-# Default share image (Open Graph / Twitter)
+# Default share image (Open Graph / Twitter). jekyll-seo-tag reads page.image,
+# so it is applied to every page via defaults; site.image feeds the Person JSON-LD.
 image: /assets/images/og-image.png
-twitter:
-  card: summary_large_image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/og-image.png
 
 # Social links
 social:
