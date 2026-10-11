@@ -79,6 +79,35 @@
         </div>
     </footer>
 
+    <!-- Keep the fixed header on screen when the page is pinch-zoomed. Mobile browsers pin
+         fixed elements to the unzoomed page, so panning a zoomed page slides the header off. -->
+    <script>
+        (function () {
+            var nav = document.querySelector('.nav-bar');
+            var vv = window.visualViewport;
+            if (!nav || !vv) return;
+            var pending = false;
+            function place() {
+                pending = false;
+                if (vv.scale <= 1.01 && !vv.offsetLeft && !vv.offsetTop) {
+                    nav.style.transform = '';
+                    return;
+                }
+                nav.style.transformOrigin = '0 0';
+                nav.style.transform = 'translate(' + vv.offsetLeft + 'px, ' + vv.offsetTop + 'px) scale(' + (1 / vv.scale) + ')';
+            }
+            function schedule() {
+                if (!pending) {
+                    pending = true;
+                    requestAnimationFrame(place);
+                }
+            }
+            vv.addEventListener('scroll', schedule);
+            vv.addEventListener('resize', schedule);
+            schedule();
+        })();
+    </script>
+
     <!-- Mobile nav: edge fades and highlight of the section being read (styled on mobile only) -->
     <script>
         (function () {
