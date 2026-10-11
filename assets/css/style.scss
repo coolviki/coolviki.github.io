@@ -219,6 +219,16 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
+/* Short line under a section title */
+.section-intro {
+    max-width: 640px;
+    margin: calc(var(--spacing-sm) - var(--spacing-xl)) auto var(--spacing-xl);
+    text-align: center;
+    font-size: 17px;
+    color: var(--color-text-secondary);
+    text-wrap: balance;
+}
+
 /* Card Sections - Apple Style */
 .card-section {
     background: var(--color-background);
@@ -488,6 +498,11 @@ a:hover {
 
     .section-content {
         font-size: 17px;
+    }
+
+    .section-intro {
+        margin: calc(var(--spacing-xs) - var(--spacing-md)) auto var(--spacing-md);
+        font-size: 16px;
     }
 
     /* Cards already sit inside the section padding; don't inset them twice */
