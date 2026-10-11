@@ -112,7 +112,8 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
 
 <!-- Projects Section -->
 <section id="projects" class="content-section">
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">Personal Projects</h2>
+    <p class="section-intro">Apps I've built in my own time. Not affiliated with BlackRock.</p>
 
     <div class="card-section project-card">
         <a href="https://paywise.vikramkumar.org" target="_blank" rel="noopener" class="project-shot">
