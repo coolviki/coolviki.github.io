@@ -243,6 +243,38 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
+/* Project cards - screenshot beside the description */
+.project-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+}
+
+.project-shot {
+    display: block;
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-shot:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.project-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-body .github-links {
+    text-align: left;
+}
+
 /* Lists - Apple Style (Clean, no borders) */
 .feature-list {
     list-style: none;
@@ -399,6 +431,18 @@ a:hover {
     .card-title {
         font-size: 22px;
         margin-bottom: var(--spacing-sm);
+    }
+
+    /* Screenshot on top, text below */
+    .project-card {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .project-shot {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     .feature-list {

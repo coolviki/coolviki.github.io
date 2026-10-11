@@ -114,27 +114,37 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
 <section id="projects" class="content-section">
     <h2 class="section-title">Projects</h2>
 
-    <div class="card-section">
-        <h3 class="card-title">PayWise</h3>
-        <p><strong>Smart Credit Card Payment Recommender</strong><br>
-        <a href="https://paywise.vikramkumar.org" target="_blank" rel="noopener">paywise.vikramkumar.org</a></p>
+    <div class="card-section project-card">
+        <a href="https://paywise.vikramkumar.org" target="_blank" rel="noopener" class="project-shot">
+            <img src="{{ '/assets/images/projects/paywise.webp' | relative_url }}" alt="PayWise screen recommending the HSBC Premier Credit Card for 3% reward points at Cafe Delhi Heights, with a 20% dine-in offer" width="540" height="752" loading="lazy" decoding="async">
+        </a>
+        <div class="project-body">
+            <h3 class="card-title">PayWise</h3>
+            <p><strong>Smart Credit Card Payment Recommender</strong><br>
+            <a href="https://paywise.vikramkumar.org" target="_blank" rel="noopener">paywise.vikramkumar.org</a></p>
 
-        <p style="margin-bottom: 16px;">A mobile-first web app that helps users maximize rewards by recommending the best credit card for every purchase. Simply search for a store or restaurant, and PayWise instantly shows which card from your wallet offers the highest cashback or rewards.</p>
+            <p style="margin-bottom: 16px;">A mobile-first web app that helps users maximize rewards by recommending the best credit card for every purchase. Simply search for a store or restaurant, and PayWise instantly shows which card from your wallet offers the highest cashback or rewards.</p>
 
-        <div class="github-links" style="margin-top: 16px;">
-            <a href="https://github.com/coolviki/paywise" target="_blank" rel="noopener" class="github-button">View on GitHub</a>
+            <div class="github-links" style="margin-top: 16px;">
+                <a href="https://github.com/coolviki/paywise" target="_blank" rel="noopener" class="github-button">View on GitHub</a>
+            </div>
         </div>
     </div>
 
-    <div class="card-section">
-        <h3 class="card-title">Stock Portfolio</h3>
-        <p><strong>Investment Portfolio Tracker</strong><br>
-        <a href="https://stock.vikramkumar.org" target="_blank" rel="noopener">stock.vikramkumar.org</a></p>
+    <div class="card-section project-card">
+        <a href="https://stock.vikramkumar.org" target="_blank" rel="noopener" class="project-shot">
+            <img src="{{ '/assets/images/projects/stock-portfolio.webp' | relative_url }}" alt="Stock Portfolio dashboard showing market indices, invested and current value, XIRR and holdings" width="540" height="564" loading="lazy" decoding="async">
+        </a>
+        <div class="project-body">
+            <h3 class="card-title">Stock Portfolio</h3>
+            <p><strong>Investment Portfolio Tracker</strong><br>
+            <a href="https://stock.vikramkumar.org" target="_blank" rel="noopener">stock.vikramkumar.org</a></p>
 
-        <p style="margin-bottom: 16px;">A web application for tracking and managing stock investments. Monitor your portfolio performance, view holdings, and analyze your investment positions.</p>
+            <p style="margin-bottom: 16px;">A web application for tracking and managing stock investments. Monitor your portfolio performance, view holdings, and analyze your investment positions.</p>
 
-        <div class="github-links" style="margin-top: 16px;">
-            <a href="https://github.com/coolviki/stock-portfolio-app" target="_blank" rel="noopener" class="github-button">View on GitHub</a>
+            <div class="github-links" style="margin-top: 16px;">
+                <a href="https://github.com/coolviki/stock-portfolio-app" target="_blank" rel="noopener" class="github-button">View on GitHub</a>
+            </div>
         </div>
     </div>
 </section>
