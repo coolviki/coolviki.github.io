@@ -79,5 +79,34 @@
             </div>
         </div>
     </footer>
+
+    <!-- Highlight the section being read in the nav (styled on mobile only) -->
+    <script>
+        (function () {
+            var row = document.querySelector('.nav-links');
+            if (!row || !('IntersectionObserver' in window)) return;
+            var links = {};
+            row.querySelectorAll('a[href^="#"]').forEach(function (a) {
+                links[a.getAttribute('href').slice(1)] = a;
+            });
+            var current;
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    var link = links[entry.target.id];
+                    if (!link || link === current) return;
+                    if (current) current.classList.remove('active');
+                    link.classList.add('active');
+                    current = link;
+                    // Keep the active pill visible in the swipeable row
+                    row.scrollTo({ left: link.offsetLeft - row.offsetLeft - 16, behavior: 'smooth' });
+                });
+            }, { rootMargin: '-40% 0px -55% 0px' });
+            Object.keys(links).forEach(function (id) {
+                var section = document.getElementById(id);
+                if (section) observer.observe(section);
+            });
+        })();
+    </script>
 </body>
 </html>
