@@ -578,6 +578,22 @@ html {
     margin-bottom: var(--spacing-sm);
 }
 
+/* GitHub contribution streak card (third-party image; hides itself if it fails to load) */
+.github-streak {
+    display: block;
+    max-width: 495px;
+    margin: var(--spacing-md) auto var(--spacing-lg);
+    border-radius: var(--border-radius-sm);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.github-streak img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .github-links {
     text-align: center;
     margin-top: var(--spacing-md);
