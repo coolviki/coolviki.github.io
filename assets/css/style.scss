@@ -135,6 +135,13 @@ body {
     line-height: 1.2;
 }
 
+.hero-tagline {
+    display: block;
+    margin-top: var(--spacing-xs);
+    font-size: 0.7em;
+    text-wrap: balance;
+}
+
 .hero-buttons {
     display: flex;
     justify-content: center;
@@ -284,6 +291,49 @@ body {
 
 .project-body .github-links {
     text-align: left;
+}
+
+/* Recognition - one row per item, year on the right */
+.recognition-list {
+    list-style: none;
+}
+
+.recognition-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.recognition-list li:first-child {
+    padding-top: 0;
+}
+
+.recognition-list li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.recognition-list strong {
+    display: block;
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.recognition-list span {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+}
+
+.recognition-list .recognition-year {
+    flex: none;
+    font-size: 17px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text-secondary);
 }
 
 /* Lists - Apple Style (Clean, no borders) */
@@ -463,6 +513,10 @@ a:hover {
     .hero-title {
         font-size: 40px;
         margin-bottom: var(--spacing-sm);
+    }
+
+    .hero-tagline {
+        font-size: 16px;
     }
 
     .hero-subtitle {

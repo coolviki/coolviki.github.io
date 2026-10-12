@@ -27,6 +27,7 @@
             { "@type": "CollegeOrUniversity", "name": "Maharshi Dayanand University" }
         ],
         "address": { "@type": "PostalAddress", "addressRegion": "Delhi NCR", "addressCountry": "IN" },
+        "award": ["BlackRock Innovator Award (2019)"],
         "knowsAbout": ["Wealth Management Technology", "Aladdin", "Cloud Strategy", "AI Adoption", "Snowflake", "Software Architecture"],
         "sameAs": [{% for link in site.social.links %}"{{ link }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
     }
