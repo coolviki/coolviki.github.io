@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     
     <!-- SEO -->
-    <title>{{ page.title | default: site.title }}</title>
+    <title>{% if page.url == "/" %}{{ page.title | default: site.title }}{% else %}{{ page.title }} – {{ site.author }}{% endif %}</title>
     {% seo title=false %}
+    {% feed_meta %}
     {% if page.url == "/" %}
     <script type="application/ld+json">
     {
@@ -53,11 +54,14 @@
                 <a href="{{ '/' | relative_url }}">{{ site.author }}</a>
             </div>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Personal Projects</a>
+                <a href="{{ '/' | relative_url }}#about">About</a>
+                <a href="{{ '/' | relative_url }}#experience">Experience</a>
+                <a href="{{ '/' | relative_url }}#education">Education</a>
+                <a href="{{ '/' | relative_url }}#skills">Skills</a>
+                <a href="{{ '/' | relative_url }}#projects">Personal Projects</a>
+                {%- if site.posts.size > 0 %}
+                <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' %} class="active" aria-current="page"{% endif %}>Writing</a>
+                {%- endif %}
             </div>
         </div>
     </nav>
@@ -95,12 +99,15 @@
             window.addEventListener('resize', updateFades);
             updateFades();
 
+            // On a blog page the Writing pill starts active; bring it into view
+            var current = row.querySelector('a.active');
+            if (current) row.scrollLeft = current.offsetLeft - row.offsetLeft - 16;
+
             if (!('IntersectionObserver' in window)) return;
             var links = {};
-            row.querySelectorAll('a[href^="#"]').forEach(function (a) {
-                links[a.getAttribute('href').slice(1)] = a;
+            row.querySelectorAll('a').forEach(function (a) {
+                if (a.hash && a.pathname === location.pathname) links[a.hash.slice(1)] = a;
             });
-            var current;
             var observer = new IntersectionObserver(function (entries) {
                 entries.forEach(function (entry) {
                     if (!entry.isIntersecting) return;

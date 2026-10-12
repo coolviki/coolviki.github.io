@@ -101,6 +101,30 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
     </div>
 </section>
 
+{% if site.posts.size > 0 %}
+<!-- Latest Writing Section -->
+<section id="writing" class="content-section">
+    <h2 class="section-title">Latest Writing</h2>
+    <ul class="post-list">
+        {%- for post in site.posts limit: 3 %}
+        <li>
+            <a class="post-card" href="{{ post.url | relative_url }}">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
+                <h3>{{ post.title }}</h3>
+                {%- if post.description %}
+                <p>{{ post.description }}</p>
+                {%- endif %}
+                <span class="post-card-more">Read →</span>
+            </a>
+        </li>
+        {%- endfor %}
+    </ul>
+    <div class="projects-more">
+        <a href="{{ '/blog/' | relative_url }}" class="github-button">All writing</a>
+    </div>
+</section>
+{% endif %}
+
 <!-- Education Section -->
 <section id="education" class="content-section">
     <h2 class="section-title">Education</h2>
