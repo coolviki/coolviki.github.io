@@ -1,6 +1,7 @@
 ---
 title: "Management/Life lessons from my 10k run"
 description: "What six weeks of training for my first 10K taught me about goals, plans, teams and finishing what you start."
+image: /assets/images/blog/10k-run/share.jpg
 linkedin_url: https://www.linkedin.com/pulse/managementlife-lessons-from-my-10k-run-vikram-kumar
 ---
 Life is simple, and we often try hard to make it challenging. Something similar may be true for management, be it personal or professional, and if we look around, there would be many management lessons we could take from our everyday life.
@@ -27,6 +28,11 @@ Signing up for a plan is just the beginning. Making sure you stick to it is anot
 
 The race was supposed to start at 5:20 AM, which was early for me despite being a morning person. With butterflies in my stomach, I held my nerves and began the run. Given I was running in this big a group for the first time, it felt a lot easier with so many like-minded people working toward a common goal (Workspace collaboration, anyone ?). No surprises here that I had my best 10K run timing on D-Day itself.
 
+<figure>
+  <img src="{{ '/assets/images/blog/10k-run/india-gate.webp' | relative_url }}" alt="Runners heading towards India Gate at dawn during the Delhi Half Marathon 10K" width="900" height="1200" loading="lazy" decoding="async">
+  <figcaption>Running in a group felt a lot easier than running alone</figcaption>
+</figure>
+
 ## A pat on the back goes a long way
 
 Halfway through the run, there were always thoughts in my mind as I started calculating that if I do a brisk walk instead of a run, I may still be able to wrap it up under my 90 mins target. But seeing hordes of people cheering for us as we ran made me push further than I ever thought I could. Similarly, at our work, it's not always about the corner office or the highest compensation, but often, a small pat on the back or words of encouragement from the person you look up to help get the best out of people.
@@ -40,3 +46,7 @@ For all your runners, you would know the last 10 % of the run is always the toug
 Joy, a feeling of accomplishment a sense of pride as I crossed the finish line and grabbed the participation medal and the finishing certificate. Though 10K by no means is a big achievement but I was so happy to have executed a plan which seemed impossible less than two months back.
 
 Thoughts started crossing my mind - What's next? Look at the most successful people and entrepreneurs you have worked with or know. What is common among them? Other than the fact that they are super intelligent humans and may have failed multiple times before tasting success but in most cases, they don't just bask in the glory of success forever and ever. Bill Gates never stopped with Windows 95, Elon Musk with Paypal, and Jeff Bezos just selling books online. My next goal may not be a marathon later (though I would want to continue running for a while), but something different from what I may have tried before and then repeat the above steps all over again :-)
+
+<figure>
+  <img src="{{ '/assets/images/blog/10k-run/certificate.webp' | relative_url }}" alt="Race certificate: Vikram Kumar, Vedanta Delhi Half Marathon 2022, Open 10K, chip time 01:18:26" width="800" height="1134" loading="lazy" decoding="async">
+</figure>

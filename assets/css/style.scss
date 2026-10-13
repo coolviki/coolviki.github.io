@@ -462,9 +462,28 @@ body {
 }
 
 .post-content img {
+    display: block;
     max-width: 100%;
     height: auto;
     border-radius: var(--border-radius-sm);
+}
+
+.post-content figure {
+    margin: 1.6em auto;
+    max-width: 480px;
+}
+
+.post-content figure img {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.post-content figcaption {
+    margin-top: var(--spacing-xs);
+    font-size: 15px;
+    text-align: center;
+    color: var(--color-text-secondary);
 }
 
 .post-footer {
