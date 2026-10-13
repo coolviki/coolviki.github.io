@@ -2,7 +2,7 @@
 layout: default
 ---
 {%- assign words = content | strip_html | number_of_words -%}
-{%- assign minutes = words | divided_by: 200 | at_least: 1 -%}
+{%- assign minutes = words | divided_by: 200.0 | round | at_least: 1 -%}
 <article class="post">
     <header class="post-header">
         <a class="post-back" href="{{ '/blog/' | relative_url }}">← All writing</a>
