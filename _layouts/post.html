@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{%- assign words = content | strip_html | number_of_words -%}
+{%- assign minutes = words | divided_by: 200.0 | round | at_least: 1 -%}
+<article class="post">
+    <header class="post-header">
+        <a class="post-back" href="{{ '/blog/' | relative_url }}">← All writing</a>
+        <h1 class="post-title">{{ page.title }}</h1>
+        <p class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+            · {{ minutes }} min read
+        </p>
+    </header>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    <footer class="post-footer">
+        {%- if page.linkedin_url %}
+        <p>Originally shared on <a href="{{ page.linkedin_url }}" target="_blank" rel="noopener">LinkedIn</a>, where you can join the discussion.</p>
+        {%- endif %}
+        <p class="post-disclaimer">Views are my own and don't represent those of my employer.</p>
+        <a class="post-back" href="{{ '/blog/' | relative_url }}">← All writing</a>
+    </footer>
+</article>

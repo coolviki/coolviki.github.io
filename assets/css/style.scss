@@ -98,6 +98,10 @@ body {
     color: var(--color-accent);
 }
 
+.nav-links a[aria-current="page"] {
+    color: var(--color-accent);
+}
+
 /* Main Content */
 .main-content {
     padding-top: 44px; /* Account for fixed nav */
@@ -336,6 +340,148 @@ body {
     color: var(--color-text-secondary);
 }
 
+/* Writing - post cards (homepage strip and /blog/) */
+.post-list {
+    list-style: none;
+    display: grid;
+    gap: var(--spacing-md);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.post-card {
+    display: block;
+    padding: var(--spacing-lg);
+    background: var(--color-background);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+    color: var(--color-text);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.post-card:hover {
+    text-decoration: none;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.post-card time {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+}
+
+.post-card h2,
+.post-card h3 {
+    margin: var(--spacing-xs) 0;
+    font-family: var(--font-family-primary);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-primary);
+}
+
+.post-card p {
+    color: var(--color-text-secondary);
+}
+
+.post-card-more {
+    display: inline-block;
+    margin-top: var(--spacing-sm);
+    font-weight: 500;
+    color: var(--color-accent);
+}
+
+/* Writing - a single post */
+.post {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: var(--spacing-xxl) var(--spacing-md);
+}
+
+.post-back {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.post-title {
+    margin: var(--spacing-md) 0 var(--spacing-sm);
+    font-family: var(--font-family-primary);
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--color-primary);
+}
+
+.post-meta {
+    font-size: 15px;
+    color: var(--color-text-secondary);
+}
+
+.post-content {
+    margin-top: var(--spacing-xl);
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.post-content > * + * {
+    margin-top: 1.1em;
+}
+
+.post-content h2,
+.post-content h3 {
+    margin-top: 1.8em;
+    font-family: var(--font-family-primary);
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--color-primary);
+}
+
+.post-content h2 {
+    font-size: 26px;
+}
+
+.post-content h3 {
+    font-size: 21px;
+}
+
+.post-content ul,
+.post-content ol {
+    padding-left: 1.3em;
+}
+
+.post-content li + li {
+    margin-top: 0.5em;
+}
+
+.post-content blockquote {
+    padding-left: var(--spacing-md);
+    border-left: 3px solid var(--color-border);
+    color: var(--color-text-secondary);
+}
+
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-sm);
+}
+
+.post-footer {
+    margin-top: var(--spacing-xxl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+}
+
+.post-footer p {
+    margin-bottom: var(--spacing-sm);
+}
+
+.post-disclaimer {
+    font-size: 14px;
+}
+
 /* Lists - Apple Style (Clean, no borders) */
 .feature-list {
     list-style: none;
@@ -558,6 +704,24 @@ a:hover {
     .section-intro {
         margin: calc(var(--spacing-xs) - var(--spacing-md)) auto var(--spacing-md);
         font-size: 16px;
+    }
+
+    .post {
+        padding: var(--spacing-xl) 20px;
+    }
+
+    .post-content {
+        margin-top: var(--spacing-lg);
+        font-size: 17px;
+    }
+
+    .post-card {
+        padding: 20px;
+    }
+
+    .post-card h2,
+    .post-card h3 {
+        font-size: 20px;
     }
 
     /* Cards already sit inside the section padding; don't inset them twice */
