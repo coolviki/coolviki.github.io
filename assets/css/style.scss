@@ -473,6 +473,10 @@ body {
     max-width: 480px;
 }
 
+.post-content figure.wide {
+    max-width: none;
+}
+
 .post-content figure img {
     width: 100%;
     margin: 0 auto;
