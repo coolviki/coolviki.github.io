@@ -8,7 +8,7 @@ permalink: /prompts/ai-running-coach/
     <header class="post-header">
         <a class="post-back" href="{{ '/blog/' | relative_url }}">← All writing</a>
         <h1 class="post-title">AI running coach prompt</h1>
-        <p class="post-meta">The exact prompt behind <em>My first 21K and what it taught me</em></p>
+        <p class="post-meta">The exact prompt behind <a href="{{ '/blog/my-first-21k-and-what-it-taught-me/' | relative_url }}"><em>My first 21K and what it taught me</em></a></p>
     </header>
 
 <div class="post-content" markdown="1">
