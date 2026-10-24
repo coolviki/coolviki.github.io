@@ -486,6 +486,72 @@ body {
     color: var(--color-text-secondary);
 }
 
+.post-content code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85em;
+    padding: 0.1em 0.35em;
+    border-radius: 6px;
+    background: var(--color-background-secondary);
+}
+
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.post-content th,
+.post-content td {
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.post-content th {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* Copyable prompt block */
+.prompt-block {
+    position: relative;
+}
+
+.prompt-block pre {
+    margin: 0;
+    padding: var(--spacing-lg) var(--spacing-md) var(--spacing-md);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: var(--color-text);
+    background: var(--color-background-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+}
+
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 14px;
+    font-family: var(--font-family-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background: var(--color-accent);
+    border: none;
+    border-radius: 980px;
+    cursor: pointer;
+}
+
+.copy-btn:hover {
+    opacity: 0.85;
+}
+
 .post-footer {
     margin-top: var(--spacing-xxl);
     padding-top: var(--spacing-lg);
