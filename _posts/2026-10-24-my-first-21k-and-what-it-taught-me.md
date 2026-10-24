@@ -11,7 +11,7 @@ On 5th September 2026, six weeks before my first half-marathon, I asked my AI co
 Honestly, after my first 10K I had got into a good regime of running, never too much, never too little - just stuck with discipline for a little over 3.5 years(Disclaimer the data in this post starts May, 2025 when I got my new watch) doing about 12 km every week. But clearly things were looking too familiar, too complacent and as with anything else in your life, being too comfortable for too long is not a very comfortable position to be in.
 
 <figure class="wide">
-  <a href="{{ '/assets/images/blog/21k/plateau-69-weeks.webp' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/blog/21k/plateau-69-weeks.webp' | relative_url }}" alt="Bar chart of weekly running distance from May 2025 to October 2026: 69 weeks hovering around a 12 km weekly average, titled "69 weeks. Never a week missed. Never a week further."" width="1400" height="824" loading="lazy" decoding="async"></a>
+  <a href="{{ '/assets/images/blog/21k/plateau-69-weeks.webp' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/blog/21k/plateau-69-weeks.webp' | relative_url }}" alt="Bar chart of weekly running distance from May 2025 to October 2026: 69 weeks hovering around a 12 km weekly average, titled “69 weeks. Never a week missed. Never a week further.”" width="1400" height="824" loading="lazy" decoding="async"></a>
 </figure>
 
 The same holds true for my 25-year career. Counterintuitive as it may sound, I have enjoyed the most when things were challenging and dreaded complacency and familiarity from the bottom of my heart.
@@ -39,7 +39,7 @@ Other than that a proper pair of running shoes (Adidas Evo SL), hydration kit an
 And the not so flattering response was
 
 <figure class="wide">
-  <a href="{{ '/assets/images/blog/21k/coach-verdict.webp' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/blog/21k/coach-verdict.webp' | relative_url }}" alt="The AI coach's verdict: "Ready to finish with a run/walk strategy. You are at the bottom of this band, not the top", with a table comparing my numbers against what first-timers need six weeks out" width="1400" height="699" loading="lazy" decoding="async"></a>
+  <a href="{{ '/assets/images/blog/21k/coach-verdict.webp' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/blog/21k/coach-verdict.webp' | relative_url }}" alt="The AI coach's verdict: “Ready to finish with a run/walk strategy. You are at the bottom of this band, not the top”, with a table comparing my numbers against what first-timers need six weeks out" width="1400" height="699" loading="lazy" decoding="async"></a>
 </figure>
 
 If you want to see a detailed readout of what the coach gave [here it is]({{ '/assets/files/half-marathon-readiness-and-6-week-plan.pdf' | relative_url }}) and read till the end where I get a proper score against the plan.
@@ -61,7 +61,7 @@ Week over week over the next six weeks I increased my weekly mileage and stuck t
 **Long term consistency beats short-term intensity.** And at times what we label as "Boring" boring runs, boring investment, "boring" slog gives us the maximum returns over time. I had to slow down like crazy to be able to finish the half-marathon and look at what it did to my heart rate which had to be brought down to be able to sustain a 3 hour run.
 
 <figure class="wide">
-  <a href="{{ '/assets/images/blog/21k/slower-pace-lower-heart-rate.webp' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/blog/21k/slower-pace-lower-heart-rate.webp' | relative_url }}" alt="Two charts titled "Getting slower was the plan": average pace slowed from 7:04 to 8:48 per km after the plan began, while average heart rate fell from 154 to 148 bpm" width="1400" height="976" loading="lazy" decoding="async"></a>
+  <a href="{{ '/assets/images/blog/21k/slower-pace-lower-heart-rate.webp' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/blog/21k/slower-pace-lower-heart-rate.webp' | relative_url }}" alt="Two charts titled “Getting slower was the plan”: average pace slowed from 7:04 to 8:48 per km after the plan began, while average heart rate fell from 154 to 148 bpm" width="1400" height="976" loading="lazy" decoding="async"></a>
 </figure>
 
 ## The Race
