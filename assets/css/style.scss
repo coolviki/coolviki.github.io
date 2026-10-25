@@ -425,6 +425,14 @@ body {
     line-height: 1.7;
 }
 
+/* Underline links in running text so they don't rely on colour alone */
+.post-content p a,
+.post-content li a,
+.post-footer p a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .post-content > * + * {
     margin-top: 1.1em;
 }
