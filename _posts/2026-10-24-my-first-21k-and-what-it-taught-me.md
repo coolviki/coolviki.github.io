@@ -24,7 +24,7 @@ But when I look back the first step is always the most difficult ever, be it you
 
 ## The Toolkit
 
-Almost 2 months ahead of the half-marathon I had not yet started training for the 21K, but then one fine day as I was exploring some practical application of Model Context Protocol (MCP - and yes, how can we leave AI out of anything these days) I hit upon an Open source MCP connector for my Garmin watch [here](https://github.com/Taxuspt/garmin_mcp). The setup in itself requires another blog post for another day, but this is what it looked like
+Almost 2 months ahead of the half-marathon I had not yet started training for the 21K, but then one fine day as I was exploring some practical application of Model Context Protocol (MCP - and yes, how can we leave AI out of anything these days) I hit upon an [Open source MCP connector for my Garmin watch](https://github.com/Taxuspt/garmin_mcp) here. The setup in itself requires another blog post for another day, but this is what it looked like
 
 <figure class="wide">
   <a href="{{ '/assets/images/blog/21k/garmin-mcp-setup.webp' | relative_url }}" target="_blank" rel="noopener"><img src="{{ '/assets/images/blog/21k/garmin-mcp-setup.webp' | relative_url }}" alt="Diagram of the setup: Garmin watch syncs to Garmin Connect; a Raspberry Pi runs garmin_mcp, and Claude Desktop on a MacBook reaches it through an SSH tunnel" width="1266" height="1036" loading="lazy" decoding="async"></a>
