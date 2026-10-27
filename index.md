@@ -32,7 +32,7 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
 
         <p>Currently serving as Managing Director and Head of Aladdin Wealth Tech India at BlackRock, leading both Product Engineering and Client Implementation teams – a key technology revenue arm for BlackRock. Aladdin Wealth™ is an industry-leading platform powering the future of wealth management, built on the portfolio and risk analysis technology used by BlackRock and sophisticated institutions globally.</p>
 
-        <p>Played a key role in the firm's strategic tech direction including cloud migration, AI adoption and move to various SaaS offerings like Snowflake leading to the Tech 2030 vision. Delivered multiple topline growth initiatives including commercial offerings for Aladdin including AI offerings, Data warehousing offerings and providing compute at scale.</p>
+        <p>Played a key role in the firm's strategic tech direction including cloud migration, AI adoption and move to various SaaS offerings like Snowflake, shaping the firm's next-generation technology platform. Delivered multiple topline growth initiatives including commercial offerings for Aladdin including AI offerings, Data warehousing offerings and providing compute at scale.</p>
     </div>
 </section>
 
@@ -49,7 +49,7 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
             <li>Led the Aladdin Wealth Tech (AWT) team out of India, including Product Engineering and Client Implementation teams – a key technology revenue arm for BlackRock</li>
             <li>Aladdin Wealth™ is an industry-leading platform powering the future of wealth management, built on portfolio and risk analysis technology used by BlackRock and sophisticated institutions globally</li>
             <li>Previously led the Active Equities Integration & Data Investments team, architecting & developing tools that deliver data science-driven insights to Active Equities investors for Alpha generation</li>
-            <li>Played a key role in firm's strategic tech direction including cloud migration, AI adoption, and move to SaaS offerings like Snowflake leading to Tech 2030 vision</li>
+            <li>Played a key role in firm's strategic tech direction including cloud migration, AI adoption, and move to SaaS offerings like Snowflake, shaping the firm's next-generation technology platform</li>
             <li>Delivered multiple topline growth initiatives including commercial offerings for Aladdin: AI offerings, Data warehousing offerings, and compute at scale</li>
         </ul>
     </div>
