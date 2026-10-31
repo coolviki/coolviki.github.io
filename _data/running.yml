@@ -1,0 +1,16 @@
+# Monthly running summaries for /running/ — newest first.
+# To add a month: upload assets/videos/running/YYYY-MM.mp4 and its poster, then add an entry at the top.
+- month: October 2026
+  tagline: Race month 🏅
+  video: /assets/videos/running/2026-10.mp4
+  poster: /assets/images/running/2026-10-poster.webp
+  stats:
+    - value: 100.26 km
+      label: distance
+    - value: 14h 46m
+      label: moving
+    - value: 21.31 km
+      label: longest run
+  note: "First half marathon, 3:02:13 chip time. Last year the 10K, this year the half."
+  link: /blog/my-first-21k-and-what-it-taught-me/
+  link_text: Read the race story

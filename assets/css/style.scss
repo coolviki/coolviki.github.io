@@ -428,7 +428,8 @@ body {
 /* Underline links in running text so they don't rely on colour alone */
 .post-content p a,
 .post-content li a,
-.post-footer p a {
+.post-footer p a,
+.section-intro a {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -577,6 +578,75 @@ body {
 
 .post-disclaimer {
     font-size: 14px;
+}
+
+/* Running log - one card per month */
+.run-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 480px));
+    justify-content: center;
+    gap: var(--spacing-lg);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.run-card {
+    overflow: hidden;
+    background: var(--color-background);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.run-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: #111;
+}
+
+.run-body {
+    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-lg);
+}
+
+.run-body h2 {
+    font-family: var(--font-family-primary);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.run-tagline {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+}
+
+.run-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.run-stats dt {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-text-secondary);
+}
+
+.run-stats dd {
+    font-family: var(--font-family-primary);
+    font-size: 20px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-primary);
+}
+
+.run-body p {
+    color: var(--color-text);
 }
 
 /* Lists - Apple Style (Clean, no borders) */
@@ -819,6 +889,19 @@ a:hover {
     .post-card h2,
     .post-card h3 {
         font-size: 20px;
+    }
+
+    .run-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+
+    .run-body {
+        padding: var(--spacing-sm) 20px 20px;
+    }
+
+    .run-stats dd {
+        font-size: 18px;
     }
 
     /* Cards already sit inside the section padding; don't inset them twice */

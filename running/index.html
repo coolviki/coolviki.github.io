@@ -1,0 +1,56 @@
+---
+layout: default
+title: Running log
+description: Vikram Kumar's monthly running log – a 30-second video summary of each month's runs, with distance, time on feet and longest run.
+image: /assets/images/running/share.jpg
+---
+<section class="content-section running-log">
+    <h1 class="section-title">Running log</h1>
+    <p class="section-intro">A 30-second look back at each month of running. Consistency compounds.</p>
+
+    <div class="run-grid">
+        {%- for m in site.data.running %}
+        <article class="run-card">
+            <video class="run-video" controls muted loop playsinline preload="none"
+                   poster="{{ m.poster | relative_url }}" width="1280" height="720"
+                   aria-label="{{ m.month }} running summary video">
+                <source src="{{ m.video | relative_url }}" type="video/mp4">
+            </video>
+            <div class="run-body">
+                <h2>{{ m.month }}{% if m.tagline %} <span class="run-tagline">{{ m.tagline }}</span>{% endif %}</h2>
+                <dl class="run-stats">
+                    {%- for s in m.stats %}
+                    <div><dt>{{ s.label }}</dt><dd>{{ s.value }}</dd></div>
+                    {%- endfor %}
+                </dl>
+                {%- if m.note %}
+                <p>{{ m.note }}</p>
+                {%- endif %}
+                {%- if m.link %}
+                <a class="post-card-more" href="{{ m.link | relative_url }}">{{ m.link_text | default: "Read more" }} →</a>
+                {%- endif %}
+            </div>
+        </article>
+        {%- endfor %}
+    </div>
+</section>
+
+<!-- Play each clip (muted) while it's on screen; respect reduced-motion preferences -->
+<script>
+    (function () {
+        if (!('IntersectionObserver' in window)) return;
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var observer = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                var v = entry.target;
+                if (entry.isIntersecting) {
+                    var p = v.play();
+                    if (p && p.catch) p.catch(function () {});
+                } else if (!v.paused) {
+                    v.pause();
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.run-video').forEach(function (v) { observer.observe(v); });
+    })();
+</script>
