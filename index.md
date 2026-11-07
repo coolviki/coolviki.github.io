@@ -150,7 +150,7 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
         <ul class="feature-list">
             <li><strong>Software Engineering & Architecture</strong> – Technology stack includes Java, Python, Various databases including Snowflake</li>
             <li><strong>Multi Cloud Strategy</strong> – Multi cloud usage and adoption, Cloud first Approach</li>
-            <li><strong>AI First Transformation</strong> – Leading AI adoption and integration initiatives</li>
+            <li><strong>AI First Transformation</strong> – Leading AI adoption at scale; hands-on with agentic AI and MCP (built the PayWise MCP server and a Garmin-to-Claude running-coach workflow)</li>
             <li><strong>Thought Leadership</strong> – Strategic technology direction and innovation</li>
         </ul>
     </div>
@@ -175,14 +175,17 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
             <img src="{{ '/assets/images/projects/paywise.webp' | relative_url }}" alt="PayWise screen recommending the HSBC Premier Credit Card for 3% reward points at Cafe Delhi Heights, with a 20% dine-in offer" width="540" height="752" loading="lazy" decoding="async">
         </a>
         <div class="project-body">
-            <h3 class="card-title">PayWise</h3>
+            <h3 class="card-title">PayWise <span class="badge">Now with MCP</span></h3>
             <p><strong>Smart Credit Card Payment Recommender</strong><br>
             <a href="https://paywise.vikramkumar.org" target="_blank" rel="noopener">paywise.vikramkumar.org</a></p>
 
             <p style="margin-bottom: 16px;">A mobile-first web app that helps users maximize rewards by recommending the best credit card for every purchase. Simply search for a store or restaurant, and PayWise instantly shows which card from your wallet offers the highest cashback or rewards.</p>
 
+            <p style="margin-bottom: 16px;">Now also works inside Claude through a remote MCP server, on the web, desktop or the mobile app at the checkout counter. Ask “Buying a ₹65k laptop at Croma, any bank offers on my cards?” and PayWise ranks your saved cards, live bank offers and dine-out deals from Swiggy Dineout, EazyDiner and District. Read-only, with per-user keys and no card numbers stored.</p>
+
             <div class="github-links" style="margin-top: 16px;">
                 <a href="https://github.com/coolviki/paywise" target="_blank" rel="noopener" class="github-button"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>View on GitHub</a>
+                <a href="https://github.com/coolviki/paywise#use-paywise-from-claude-mcp-connector" target="_blank" rel="noopener" class="github-button">How to connect</a>
             </div>
         </div>
     </div>

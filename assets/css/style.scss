@@ -265,6 +265,19 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
+/* Small pill label next to a card title */
+.badge {
+    display: inline-block;
+    margin-left: var(--spacing-xs);
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    vertical-align: middle;
+    color: #0058b0;
+    background: rgba(0, 113, 227, 0.1);
+    border-radius: 980px;
+}
+
 /* Project cards - screenshot beside the description */
 .project-card {
     display: grid;
@@ -294,7 +307,7 @@ body {
 }
 
 .project-body .github-links {
-    text-align: left;
+    justify-content: flex-start;
 }
 
 /* Recognition - one row per item, year on the right */
@@ -993,7 +1006,11 @@ html {
 }
 
 .github-links {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
     margin-top: var(--spacing-md);
 }
 
