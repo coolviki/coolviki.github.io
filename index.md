@@ -101,18 +101,13 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
     </div>
 </section>
 
-<!-- PayWise demo autoplay: play muted while on screen; respect reduced motion -->
+<!-- PayWise demo: autoplays natively (muted); stop it for people who prefer reduced motion -->
 <script>
     (function () {
         var v = document.querySelector('.project-video');
-        if (!v || !('IntersectionObserver' in window)) return;
-        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.controls = true; return; }
-        new IntersectionObserver(function (entries) {
-            entries.forEach(function (e) {
-                if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
-                else if (!v.paused) v.pause();
-            });
-        }, { threshold: 0.4 }).observe(v);
+        if (v && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            v.removeAttribute('autoplay'); v.pause(); v.controls = true;
+        }
     })();
 </script>
 
@@ -187,7 +182,7 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
 
     <div class="card-section project-card">
         <div class="project-shot project-shot-video">
-            <video class="project-video" muted loop playsinline preload="none" width="540" height="660"
+            <video class="project-video" autoplay muted loop playsinline preload="auto" width="540" height="660"
                    poster="{{ '/assets/images/projects/paywise-mcp-poster.webp' | relative_url }}"
                    aria-label="Demo: asking Claude for a dinner offer at Social, Connaught Place. PayWise shows an interactive card with the top deal, 30% off on EazyDiner with your HSBC card, then Claude recommends how to pay">
                 <source src="{{ '/assets/videos/projects/paywise-mcp.mp4' | relative_url }}" type="video/mp4">
