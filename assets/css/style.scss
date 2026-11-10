@@ -300,6 +300,18 @@ body {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
 }
 
+.project-shot-video:hover {
+    transform: none;
+}
+
+.project-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 540 / 660;
+    background: #1f1f1f;
+}
+
 .project-shot img {
     display: block;
     width: 100%;

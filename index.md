@@ -101,6 +101,21 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
     </div>
 </section>
 
+<!-- PayWise demo autoplay: play muted while on screen; respect reduced motion -->
+<script>
+    (function () {
+        var v = document.querySelector('.project-video');
+        if (!v || !('IntersectionObserver' in window)) return;
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { v.controls = true; return; }
+        new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+                else if (!v.paused) v.pause();
+            });
+        }, { threshold: 0.4 }).observe(v);
+    })();
+</script>
+
 {% if site.posts.size > 0 %}
 <!-- Latest Writing Section -->
 <section id="writing" class="content-section">
@@ -171,9 +186,13 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
     <p class="section-intro">Apps I've built in my own time. Not affiliated with BlackRock.</p>
 
     <div class="card-section project-card">
-        <a href="https://paywise.vikramkumar.org" target="_blank" rel="noopener" class="project-shot">
-            <img src="{{ '/assets/images/projects/paywise.webp' | relative_url }}" alt="PayWise screen recommending the HSBC Premier Credit Card for 3% reward points at Cafe Delhi Heights, with a 20% dine-in offer" width="540" height="752" loading="lazy" decoding="async">
-        </a>
+        <div class="project-shot project-shot-video">
+            <video class="project-video" muted loop playsinline preload="none" width="540" height="660"
+                   poster="{{ '/assets/images/projects/paywise-mcp-poster.webp' | relative_url }}"
+                   aria-label="Demo: asking Claude for a dinner offer at Social, Connaught Place. PayWise shows an interactive card with the top deal, 30% off on EazyDiner with your HSBC card, then Claude recommends how to pay">
+                <source src="{{ '/assets/videos/projects/paywise-mcp.mp4' | relative_url }}" type="video/mp4">
+            </video>
+        </div>
         <div class="project-body">
             <h3 class="card-title">PayWise <span class="badge">Now with MCP</span></h3>
             <p><strong>Smart Credit Card Payment Recommender</strong><br>
