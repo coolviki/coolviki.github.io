@@ -11,7 +11,7 @@ image: /assets/images/running/share.jpg
     <div class="run-grid">
         {%- for m in site.data.running %}
         <article class="run-card">
-            <video class="run-video" controls muted loop playsinline preload="none"
+            <video class="run-video" controls autoplay muted loop playsinline preload="metadata"
                    poster="{{ m.poster | relative_url }}" width="1280" height="720"
                    aria-label="{{ m.month }} running summary video">
                 <source src="{{ m.video | relative_url }}" type="video/mp4">
@@ -35,11 +35,15 @@ image: /assets/images/running/share.jpg
     </div>
 </section>
 
-<!-- Play each clip (muted) while it's on screen; respect reduced-motion preferences -->
+<!-- Clips autoplay natively (muted). Pause the ones off screen; don't autoplay for reduced motion -->
 <script>
     (function () {
+        var videos = document.querySelectorAll('.run-video');
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            videos.forEach(function (v) { v.removeAttribute('autoplay'); v.pause(); });
+            return;
+        }
         if (!('IntersectionObserver' in window)) return;
-        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         var observer = new IntersectionObserver(function (entries) {
             entries.forEach(function (entry) {
                 var v = entry.target;
@@ -50,7 +54,7 @@ image: /assets/images/running/share.jpg
                     v.pause();
                 }
             });
-        }, { threshold: 0.5 });
-        document.querySelectorAll('.run-video').forEach(function (v) { observer.observe(v); });
+        }, { threshold: 0.25 });
+        videos.forEach(function (v) { observer.observe(v); });
     })();
 </script>
