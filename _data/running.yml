@@ -42,3 +42,16 @@
   note: "The month that built the half marathon. My biggest month ever: 22 runs on 21 of 30 days, and a Sunday long-run ladder from 9.63 to 16.37 km, the furthest I had ever run. Slowing down on purpose made the watch say I was getting slower; three weeks later I ran 21.31 km."
   link: /blog/my-first-21k-and-what-it-taught-me/
   link_text: Read the race story
+
+- month: August 2026
+  tagline: Before the plan
+  video: /assets/videos/running/2026-08.mp4
+  poster: /assets/images/running/2026-08-poster.webp
+  stats:
+    - value: 58.26 km
+      label: distance
+    - value: 6h 56m
+      label: moving
+    - value: 7.87 km
+      label: longest run
+  note: "Before there was a plan. 18 short runs averaging 3.24 km at 7:09/km, faster than September, with 65% on a treadmill through the monsoon. Then the plan started: slower, longer, outside. Six weeks later, a half marathon."
