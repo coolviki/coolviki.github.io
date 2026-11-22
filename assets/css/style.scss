@@ -278,12 +278,26 @@ body {
     border-radius: 980px;
 }
 
+/* Project card without a screenshot or video (yet): text spans the card */
+.project-card-text {
+    grid-template-columns: 1fr;
+}
+
+.project-body p a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 /* Project cards - screenshot beside the description */
 .project-card {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: var(--spacing-xl);
     align-items: center;
+}
+
+.project-card.project-card-text {
+    grid-template-columns: 1fr;
 }
 
 .project-shot {
