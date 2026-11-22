@@ -213,9 +213,9 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
 
             <p style="margin-bottom: 16px;">An MCP server that gives Claude live access to my Garmin data — runs, sleep, HRV, resting heart rate, training load — and can write structured workouts back to my watch calendar. Built during training for my <a href="{{ '/blog/my-first-21k-and-what-it-taught-me/' | relative_url }}">first half marathon</a>, so the daily question “should I run today, and how hard?” gets answered from last night’s recovery rather than a plan written six weeks earlier.</p>
 
-            <p style="margin-bottom: 16px;">Started on a Raspberry Pi on the home network, which worked until it didn’t: five separate outages traced to a sleeping Mac, a dropped SSH tunnel, and a macOS rule that silently blocks apps from reaching private IP addresses. Now a container on Railway behind a bearer-token proxy, reachable from phone, web and desktop alike. Garmin credentials never leave my machine — only a session token, seeded as an environment variable.</p>
+            <p style="margin-bottom: 16px;">Started on a Raspberry Pi on the home network, which worked until it didn’t: five separate outages traced to a sleeping Mac, a dropped SSH tunnel, and a macOS rule that silently blocks apps from reaching private IP addresses. Now a container on Railway behind an authenticating proxy, reachable from phone, web and desktop alike. Garmin credentials never leave my machine.</p>
 
-            <p>The proxy logs every request with the real client IP and outcome, and exposes a second MCP endpoint over the same token. So I can ask Claude “anything odd on the server?” and get back who has been knocking, from where, and whether they got in.</p>
+            <p>The proxy logs every request with the real client IP and outcome, and exposes a second MCP endpoint behind the same proxy. So I can ask Claude “anything odd on the server?” and get back who has been knocking, from where, and whether they got in. Observability built in from day one: even a one-person server gets the audit trail I’d expect of a production system, and I can query it in plain English.</p>
         </div>
     </div>
 
