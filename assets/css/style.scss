@@ -265,6 +265,28 @@ body {
     margin-bottom: var(--spacing-md);
 }
 
+/* Pair of portrait demo clips under a project description */
+.project-clips {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 260px));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.project-clip .project-video {
+    aspect-ratio: 540 / 870;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.project-clip figcaption {
+    margin-top: var(--spacing-xs);
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
 /* Small pill label next to a card title */
 .badge {
     display: inline-block;

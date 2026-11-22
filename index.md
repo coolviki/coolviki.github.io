@@ -101,13 +101,13 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
     </div>
 </section>
 
-<!-- PayWise demo: autoplays natively (muted); stop it for people who prefer reduced motion -->
+<!-- Project demo clips autoplay natively (muted); stop them for people who prefer reduced motion -->
 <script>
     (function () {
-        var v = document.querySelector('.project-video');
-        if (v && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+        document.querySelectorAll('.project-video').forEach(function (v) {
             v.removeAttribute('autoplay'); v.pause(); v.controls = true;
-        }
+        });
     })();
 </script>
 
@@ -205,7 +205,6 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
     </div>
 
     <div class="card-section project-card project-card-text">
-        <!-- Demo videos and the GitHub link go here once the repo is public -->
         <div class="project-body">
             <h3 class="card-title">Garmin MCP <span class="badge">Self-hosted</span></h3>
             <p><strong>Live Garmin Connect data inside Claude</strong><br>
@@ -216,6 +215,25 @@ description: Vikram Kumar is Managing Director and Head of Aladdin Wealth Tech I
             <p style="margin-bottom: 16px;">Started on a Raspberry Pi on the home network, which worked until it didn’t: five separate outages traced to a sleeping Mac, a dropped SSH tunnel, and a macOS rule that silently blocks apps from reaching private IP addresses. Now a container on Railway behind an authenticating proxy, reachable from phone, web and desktop alike. Garmin credentials never leave my machine.</p>
 
             <p>The proxy logs every request with the real client IP and outcome, and exposes a second MCP endpoint behind the same proxy. So I can ask Claude “anything odd on the server?” and get back who has been knocking, from where, and whether they got in. Observability built in from day one: even a one-person server gets the audit trail I’d expect of a production system, and I can query it in plain English.</p>
+
+            <div class="project-clips">
+                <figure class="project-clip">
+                    <video class="project-video" autoplay muted loop playsinline preload="auto" width="540" height="870"
+                           poster="{{ '/assets/images/projects/garmin-readiness-poster.webp' | relative_url }}"
+                           aria-label="Demo: asking Claude “Should I run today, and how hard?”. Claude reads recovery data from Garmin and advises against a second session, citing readiness, resting heart rate and body battery, and notes tomorrow’s easy 5k is already on the watch">
+                        <source src="{{ '/assets/videos/projects/garmin-readiness.mp4' | relative_url }}" type="video/mp4">
+                    </video>
+                    <figcaption>“Should I run today, and how hard?”</figcaption>
+                </figure>
+                <figure class="project-clip">
+                    <video class="project-video" autoplay muted loop playsinline preload="auto" width="540" height="870"
+                           poster="{{ '/assets/images/projects/garmin-gate-poster.webp' | relative_url }}"
+                           aria-label="Demo: asking Claude “Anything odd on the server?”. Claude checks the server’s request log and reports all clear: all traffic authenticated, nothing flagged, server healthy">
+                        <source src="{{ '/assets/videos/projects/garmin-gate.mp4' | relative_url }}" type="video/mp4">
+                    </video>
+                    <figcaption>“Anything odd on the server?”</figcaption>
+                </figure>
+            </div>
         </div>
     </div>
 
